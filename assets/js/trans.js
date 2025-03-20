@@ -1,4 +1,4 @@
-import translations from "./translations.js";
+import translations from "translations.js";
 
 // Helper function to update language UI elements
 function updateLanguageUI(lang) {
