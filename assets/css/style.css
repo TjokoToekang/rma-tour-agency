@@ -1,3 +1,5 @@
+@import url("style-footer.css");
+
 /* Navbar Transparan dengan Efek Blur */
 .navbar {
     background: rgba(0, 0, 0, 0.3);
@@ -54,7 +56,7 @@
 
 .navbar-nav .nav-link {
     font-size: 18px; /* Perbesar teks */
-    font-weight: bold; /* Jadikan teks lebih tebal */
+    font-weight: reguler; /* Jadikan teks lebih tebal */
     color: white !important; /* Pastikan warna teks putih */
     padding: 10px 15px; /* Tambahkan padding agar lebih proporsional */
     transition: all 0.3s ease-in-out; /* Efek transisi saat hover */
@@ -306,4 +308,9 @@ body {
     background-color: rgba(0, 0, 0, 0);
     padding: 15px 0;
     transition: background 0.3s;
+}
+
+/* Footer */
+.end-footer {
+    background-color: #0056b3;
 }

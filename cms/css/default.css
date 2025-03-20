@@ -1,0 +1,91 @@
+.btn-circle {
+  display: block;
+  width: 150px;
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-size: 16px;
+  text-align: center !important;
+}
+
+.btn-addprd {
+  width: 62px;
+  height: 20px;
+  border-radius: 100px;
+  background: #fcecea;
+  display: block;
+  color: var(--color1);
+  text-align: center;
+  padding: 7px;
+  margin: 18px 22px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-addprd:hover {
+  color: #fff;
+  background-color: var(--color2);
+}
+
+.fadeout {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+}
+
+.input-forms {
+  width: 480px !important;
+  height: 44px !important;
+  border-radius: 10px !important;
+  border: 1px solid #e9e9e9 !important;
+  padding: 0px 20px !important;
+  font-size: 15px !important;
+}
+
+.textarea-forms {
+  width: 480px !important;
+  height: 122px !important;
+  border-radius: 10px !important;
+  border: 1px solid #e9e9e9 !important;
+  padding: 15px 20px !important;
+  font-size: 15px !important;
+}
+
+.dropdown-forms {
+  width: 100% !important;
+  height: 44px !important;
+  border-radius: 10px !important;
+  border: 1px solid #e9e9e9 !important;
+  padding: 0 20px !important;
+  font-size: 15px !important;
+  appearance: none; /* Removes default dropdown arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 40px !important; /* Make space for the icon */
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/chevron-down.svg"); /* Replace with your icon path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none; /* Ensures the icon doesn't interfere with dropdown functionality */
+}
+
+.dropdown-wrapper {
+  position: relative;
+  width: 480px;
+}
+
+.index {
+  background-color: #fcecea;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 26px;
+  padding: 10px;
+}

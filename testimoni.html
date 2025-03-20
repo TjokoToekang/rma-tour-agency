@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni dengan Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .testimoni-section {
+            background-color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .testimoni-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .testimoni-title span {
+            color: #ff6600;
+        }
+
+        .testimoni-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        .testimoni-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .testimoni-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .testimoni-text {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Animasi Bintang */
+        .stars {
+            color: #FFD700;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .stars i {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+
+        .stars i:nth-child(1) { animation-delay: 0.2s; }
+        .stars i:nth-child(2) { animation-delay: 0.4s; }
+        .stars i:nth-child(3) { animation-delay: 0.6s; }
+        .stars i:nth-child(4) { animation-delay: 0.8s; }
+        .stars i:nth-child(5) { animation-delay: 1s; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section Testimoni -->
+    <section class="testimoni-section">
+        <div class="container">
+            <h2 class="testimoni-title">Apa Kata <span>Pelanggan?</span></h2>
+            
+            <!-- Carousel Testimoni -->
+            <div id="carouselTestimoni" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Testimoni 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimoni-card">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1" class="testimoni-avatar">
+                            <p class="testimoni-name">Budi Santoso</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimoni-text">"Layanan yang sangat memuaskan! Saya sangat menikmati perjalanan ini, terima kasih!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimoni 2 -->
+                    <div class="carousel-item">
+                        <div class="testimoni-card">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 2" class="testimoni-avatar">
+                            <p class="testimoni-name">Siti Aminah</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> <!-- 4 Bintang -->
+                            </div>
+                            <p class="testimoni-text">"Paket tournya sangat terjangkau dan pelayanannya luar biasa! Akan kembali lagi!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimoni 3 -->
+                    <div class="carousel-item">
+                        <div class="testimoni-card">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User 3" class="testimoni-avatar">
+                            <p class="testimoni-name">Andi Wijaya</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-alt"></i> <!-- 4.5 Bintang -->
+                            </div>
+                            <p class="testimoni-text">"Pengalaman yang sangat berharga! Tour guide sangat ramah dan informatif!"</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tombol Navigasi Carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimoni" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimoni" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
+            </div>
+            <!-- Akhir Carousel Testimoni -->
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

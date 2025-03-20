@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swapfamily=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --color1: #e8604c;
+  --color2: #313041;
+  --shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  --f7-tabbar-link-active-color: #e8604c;
+  --f7-tabbar-link-inactive-color: #979797;
+}
+
+.font-jakarta-regular {
+  font-weight: 400 !important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-jakarta-medium {
+  font-weight: 500 !important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-jakarta-semi {
+  font-weight: 600 !important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-jakarta-bold {
+  font-weight: 700 !important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-inter-regular {
+  font-weight: 400 !important;
+  font-family: "Inter", sans-serif;
+}
+
+.font-inter-medium {
+  font-weight: 500 !important;
+  font-family: "Inter", sans-serif;
+}
+
+.font-inter-semi {
+  font-weight: 600 !important;
+  font-family: "Inter", sans-serif;
+}
+
+.font-inter-bold {
+  font-weight: 700 !important;
+  font-family: "Inter", sans-serif;
+}
+
+.color1 {
+  color: var(--color1) !important;
+}
+
+.bg-color1 {
+  background-color: var(--color1) !important;
+}
+
+.color2 {
+  color: var(--color2) !important;
+}
+
+.bg-color2 {
+  background-color: var(--color2) !important;
+}
+
+.bg-shadow {
+  box-shadow: var(--shadow) !important;
+}
+
+.color-text {
+  color: #666666 !important;
+}
+
+.footer {
+  height: 100%;
+  background: url("../image/footer-web.png") no-repeat center center;
+  background-size: cover;
+}
+
+.footer-mob {
+  height: 840px;
+  background: url("../image/footer-web.png") no-repeat center center;
+  background-size: cover;
+}

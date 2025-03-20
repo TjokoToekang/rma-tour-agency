@@ -1,0 +1,164 @@
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+  .bg-mobile {
+    background-image: url("../image/background/hero.svg"); /* Set background image */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the image */
+    height: 378px; /* Full height of the viewport */
+    position: relative;
+  }
+
+  .navbar {
+    margin-top: 0px;
+    height: 80px;
+  }
+
+  .navbar .navbar-inner {
+    padding: 0px 30px;
+  }
+
+  .navbar-bg {
+    background-color: transparent !important;
+  }
+
+  .navbar-bg:after {
+    content: "";
+    position: absolute;
+    background-color: transparent !important;
+    display: block;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    transform-origin: 50% 100%;
+    transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+  }
+
+  .content {
+    margin-top: 50px;
+  }
+
+  .content h1 {
+    font-size: 25px;
+  }
+
+  .content p {
+    margin-top: -10px;
+  }
+
+  .overview-mob {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+  }
+
+  .about-mob {
+    background-image: url("../image/background/blur.svg");
+    background-size: cover;
+    height: 800px;
+    padding-bottom: 180px;
+  }
+
+  .service-mob {
+    margin-top: 50px;
+  }
+
+  .tour-mob {
+    margin-top: 100px;
+  }
+
+  .tour-mob p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--color1);
+  }
+
+  .tour-mob h1 {
+    font-size: 20px;
+    color: var(--color2);
+    margin-top: -10px;
+  }
+
+  .tour-mob a {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .passport-mob {
+    margin-top: 100px;
+  }
+
+  .passport-mob p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--color1);
+  }
+
+  .passport-mob h1 {
+    font-size: 20px;
+    color: var(--color2);
+    margin-top: -10px;
+  }
+
+  .passport-mob a {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .testi-mob {
+    background-image: url("../image/background/blur-gray.svg"); /* Set background image */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the image */
+    height: 600px; /* Full height of the viewport */
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .testi-mob p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--color1);
+  }
+
+  .testi-mob h1 {
+    font-size: 20px;
+    color: var(--color2);
+    margin-top: -10px;
+  }
+
+  .testi-mob a {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .banner-mob {
+    background-image: url("../image/background/bg-beach.svg"); /* Set background image */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the image */
+    height: 450px; /* Full height of the viewport */
+    position: relative;
+    margin-top: 0px;
+  }
+
+  .banner-mob p {
+    margin-top: 140px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .banner-mob h1 {
+    font-size: 23px;
+    color: #fff;
+    margin-top: -10px;
+  }
+
+  .banner-mob a {
+    margin-top: 30px;
+    display: block;
+  }
+}

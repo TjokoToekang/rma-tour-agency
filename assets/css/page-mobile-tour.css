@@ -1,0 +1,62 @@
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    margin-top: 0px;
+    height: 80px;
+  }
+
+  .navbar .navbar-inner {
+    padding: 0px 30px;
+  }
+
+  .navbar-bg {
+    background-color: transparent !important;
+  }
+
+  .navbar-bg:after {
+    content: "";
+    position: absolute;
+    background-color: transparent !important;
+    display: block;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    transform-origin: 50% 100%;
+    transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+  }
+
+  .content {
+    max-width: 85%;
+    margin: 40px auto;
+  }
+
+  .content h1 {
+    margin-top: -10px;
+    font-size: 22px;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .content .book {
+    margin-top: 10px;
+  }
+
+  .tab-custom {
+    max-width: 90%;
+    margin: -20px auto;
+    padding: 24px 0;
+  }
+
+  .tab-custom a {
+    font-size: 14px;
+  }
+
+  /* .content-tab {
+    max-width: 70%;
+    margin: 0 auto;
+  } */
+}
